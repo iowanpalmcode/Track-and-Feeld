@@ -17,7 +17,7 @@
   }
 }
 {
-  "homepage": "https://yourusername.github.io/YourRepoName",
+  "homepage": "https://iowanpalmcode.github.io/Track-and-Feeld",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
