@@ -50,10 +50,10 @@ function App() {
   const [activeInjuryBar, setActiveInjuryBar] = useState<any | null>(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/symptoms')
+    fetch('https://track-and-feeld.onrender.com/api/symptoms')
       .then(res => res.json())
       .then(setSymptomsList);
-    fetch('http://localhost:5000/api/injuries')
+    fetch('https://track-and-feeld.onrender.com/api/injuries')
       .then(res => res.json())
       .then(setInjuriesList);
   }, []);
@@ -67,7 +67,7 @@ function App() {
     setResults([]);
     let found: any[] = [];
     if (selectedSymptoms.length > 0) {
-      const res = await fetch('http://localhost:5000/api/guess-injury', {
+      const res = await fetch('https://track-and-feeld.onrender.com/api/guess-injury', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ symptoms: selectedSymptoms })
@@ -75,7 +75,7 @@ function App() {
       found = await res.json();
     }
     if (selectedInjuries.length > 0) {
-      const res = await fetch('http://localhost:5000/api/injury', {
+      const res = await fetch('https://track-and-feeld.onrender.com/api/injury', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ names: selectedInjuries })
