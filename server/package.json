@@ -16,3 +16,15 @@
     "sqlite3": "^5.1.7"
   }
 }
+{
+  "homepage": "https://yourusername.github.io/YourRepoName",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "gh-pages": "^x.x.x"
+  }
+}
