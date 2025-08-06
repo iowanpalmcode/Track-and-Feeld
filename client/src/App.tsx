@@ -170,7 +170,6 @@ function App() {
           <style>{`
             ${Array.from({ length: 50 }).map((_, i) => {
               const side = i % 2 === 0 ? 'left' : 'right';
-              const move = Math.random() * 80 + 20; // 20px to 100px vertical travel
               if (side === 'left') {
                 return `@keyframes triangleUpLoop${i} {
                   0% { top: 100%; }
@@ -473,3 +472,4 @@ function RevealImagesBox({ injury, onShow }: { injury: any, onShow: () => void }
     </div>
   );
 }
+void getImage
