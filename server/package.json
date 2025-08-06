@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-   "engines": {
+  "engines": {
     "node": "18.x"
-   },
+  },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,17 +18,5 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "sqlite3": "^5.1.7"
-  }
-}
-{
-  "homepage": "https://iowanpalmcode.github.io/Track-and-Feeld",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
-  "devDependencies": {
-    "gh-pages": "^x.x.x"
   }
 }
